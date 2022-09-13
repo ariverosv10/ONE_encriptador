@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <!--Incluyenndo script y link alerta personalizada-->
+    <script src="assets/sweet/sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="assets/sweet/sweetalert2.css">
+
+    <title>Desafio #1</title>
+</head>
+
+<body>
+    <header>
+        <h1><img src="img/Vector.png" alt="logo alura"></h1>
+    </header>
+    <main>
+        <section class="encriptar">
+            
+            <textarea class="cajaEncriptar" id="cajaEncrip" placeholder="Ingrese texto aqui"></textarea>
+
+            <p class="pAlerta"> &#x26A0; Solo letras minusculas sin acento</p>
+            <div class="botones">
+                <button class="botonEncriptar" onclick="btnEncriptar()"">Encriptar</button>
+                <button class="botonDesencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+
+
+
+        <section class="desencriptar">
+            <div class="mensajeSecreto">
+                <img src="img/secret.jpg" alt="logo secreto">
+                
+                <textarea disabled class="cajaDesencriptar" id="cajaDesencrip"placeholder="Ningun mensaje fue encontrado"></textarea>
+            </div>
+            <button onclick="btnCopiar()" class="botonCopiar">Copiar</button>
+        </section>
+    </main>
+    <footer>
+        <p>Desarrollado por: Angel Riveros </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
